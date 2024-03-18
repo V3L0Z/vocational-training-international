@@ -5,7 +5,6 @@ import styled from "styled-components";
 export default function Header() {
   const Container = styled.div`
     display: flex;
-    height: 5em;
     justify-content: space-around;
     align-items: center;
   `;

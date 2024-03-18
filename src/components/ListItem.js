@@ -8,9 +8,11 @@ export default function ListItem({ text, dark }) {
   const ListItem = styled.a`
     &:hover {
       cursor: pointer;
-      color: ${dark ? "red" : "#850936"};
+      color: ${({ theme: { listItem } }) =>
+        dark ? listItem.dark.primary : listItem.light.primary};
     }
-    color: ${dark ? "white" : "black"};
+    color: ${({ theme: { listItem } }) =>
+      dark ? listItem.dark.text : listItem.light.text};
     transition: all 0.3s ease-in-out;
   `;
 

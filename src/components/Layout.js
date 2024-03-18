@@ -5,7 +5,7 @@ export default function Layout({ children }) {
   const styles = {
     container: {
       display: "grid",
-      gridTemplateRows: "5em 1fr 20em",
+      gridTemplateRows: "5em 1fr 18em",
       height: "100vh",
     },
   };
